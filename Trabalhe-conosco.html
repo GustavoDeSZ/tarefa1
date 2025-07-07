@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe-conosco</title>
+</head>
+<body>
+ <A href="index.html">Voltar</A>
+     <h1>Trabalhe conosco</h1>
+
+    <h2>Vagas disponiveis</h2>
+
+    <ul>
+        <li>Testador de games</li>
+        <li>Engenheiro de hardware</li>
+        <li>Engenheiro de produção</li>
+        <li>Programador Especialista</li>
+        <li>Staff</li>
+
+    </ul>
+
+     <h2>candidate-se</h2>
+   
+    <form action="https://localhost:8001/vagas/cadastrar" method="get">
+
+    <label for="campo-nome">Nome</label>
+    <input type="text" required minlength="3" maxlength="20" id="campo-nome" name="Nome">
+    ><br>
+    <label for="campo-idade">Idade</label>
+    <input type="number" required min="14"  max="100" id="campo-idade" name="Idade">
+    <br>
+
+    <label for="campo-cpf">CPF</label>
+        <input type="text" required minlength="14"  maxlength="14"  id="campo-cpf"  name="cpf">
+        <br>
+
+        <label for="campo-data-preferida">Data preferida</label>
+        <input type="date" required name="data-preferida" id="campo-data-preferida">
+
+        <label for="campo-experiencia">Experiencia</label>
+        <input type="checkbox" id="campo-experiencia" name="experiencia" value="sim">
+        <br>
+
+        <input type="radio" id="campo-vaga-testador-de-games" name="vaga" value="testador-de-games">
+        <label for="campo-vaga-testador-de-games">Testador de games</label>
+<br>
+
+        <input type="radio" id="campo-vaga-pleno" name="vaga" value="Pleno">
+        <label for="campo-vaga-pleno">Pleno</label>
+        <br>
+<br>
+        <h2>Currículo</h2>
+        <label for="campo-anexo">Anexo</label>
+        <input type="file" id="campo-anexo" required name="Anexo">
+        <br>
+
+        <button type="submit">enviar</button>
+        
+
+</form>
+
+    
+</body>
+</html>
